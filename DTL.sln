@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTL", "DTL\DTL.csproj", "{B3D9558C-BEF8-4209-BF70-475F0017C346}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTL.DAL", "DTL.DAL\DTL.DAL.csproj", "{EEB8CB94-8D84-41B2-A0CA-4E3DA96701AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTL.BLL", "DTL.BLL\DTL.BLL.csproj", "{B2A7AD73-2D66-4D22-B8E6-D868C6E9E0E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B3D9558C-BEF8-4209-BF70-475F0017C346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3D9558C-BEF8-4209-BF70-475F0017C346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3D9558C-BEF8-4209-BF70-475F0017C346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB8CB94-8D84-41B2-A0CA-4E3DA96701AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB8CB94-8D84-41B2-A0CA-4E3DA96701AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB8CB94-8D84-41B2-A0CA-4E3DA96701AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB8CB94-8D84-41B2-A0CA-4E3DA96701AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A7AD73-2D66-4D22-B8E6-D868C6E9E0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A7AD73-2D66-4D22-B8E6-D868C6E9E0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A7AD73-2D66-4D22-B8E6-D868C6E9E0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A7AD73-2D66-4D22-B8E6-D868C6E9E0E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
