@@ -1,5 +1,6 @@
 ﻿using DTL.DAL.Interfaces;
 using DTL.DAL.Repositories;
+using DTL.Shared.Interfaces;
 using DTL.Shared.Models;
 using System;
 using System.Collections.Generic;
@@ -9,12 +10,12 @@ using System.Text.RegularExpressions;
 
 namespace DTL.BLL.Services
 {
-    public class DtlManager
+    public class DtlManager : IDtlManager
     {
-        private static BaseRepository _baseRepository;
+        private static IBaseRepository _baseRepository;
         private readonly List<string> _nums = new List<string> { "1110111", "0010010", "1011101", "1011011", "0111010", "1101011", "1101111", "1010010", "1111111", "1111011" };
 
-        public DtlManager(BaseRepository baseRepository)
+        public DtlManager(IBaseRepository baseRepository)
         {
             _baseRepository = baseRepository;
         }

@@ -3,10 +3,11 @@ using System.Data.Common;
 using Insight.Database;
 using System.Data.SqlClient;
 using DTL.Shared.Models;
+using DTL.Shared.Interfaces;
 
 namespace DTL.DAL.Repositories
 {
-    public class BaseRepository
+    public class BaseRepository : IBaseRepository
     {
         private ConfigOptions _options;
 
@@ -16,10 +17,7 @@ namespace DTL.DAL.Repositories
             _options = options.Value;
         }
 
-        public T Get<T>() where T : class
-        {
-            return GetConnection(_options.DTLConnectionString).As<T>();
-        }
+        public T Get<T>() where T : class => GetConnection(_options.DTLConnectionString).As<T>();
 
         private DbConnection GetConnection(string constr)
         {

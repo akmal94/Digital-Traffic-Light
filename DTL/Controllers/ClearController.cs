@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DTL.BLL.Services;
+using DTL.Shared.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,9 +13,9 @@ namespace DTL.Controllers
     [ApiController]
     public class ClearController : ControllerBase
     {
-        private static DtlManager _dtlManager;
+        private static IDtlManager _dtlManager;
 
-        public ClearController(DtlManager dtlManager)
+        public ClearController(IDtlManager dtlManager)
         {
             _dtlManager = dtlManager;
         }

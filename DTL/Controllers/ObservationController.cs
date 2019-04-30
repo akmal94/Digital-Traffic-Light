@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DTL.BLL.Services;
+using DTL.Shared.Interfaces;
 using DTL.Shared.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,9 +14,9 @@ namespace DTL.Controllers
     [ApiController]
     public class ObservationController : ControllerBase
     {
-        private static DtlManager _dtlManager;
+        private static IDtlManager _dtlManager;
 
-        public ObservationController(DtlManager dtlManager)
+        public ObservationController(IDtlManager dtlManager)
         {
             _dtlManager = dtlManager;
         }

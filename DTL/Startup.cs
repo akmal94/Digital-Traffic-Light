@@ -1,5 +1,6 @@
 ﻿using DTL.BLL.Services;
 using DTL.DAL.Repositories;
+using DTL.Shared.Interfaces;
 using DTL.Shared.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,8 +26,8 @@ namespace DTL
         {
             services.AddOptions();
             services.Configure<ConfigOptions>(_configuration.GetSection("ConnectionStrings"));
-            services.AddScoped<BaseRepository>();
-            services.AddScoped<DtlManager>();
+            services.AddScoped<IBaseRepository, BaseRepository>();
+            services.AddScoped<IDtlManager, DtlManager>();
             services.AddMvc();
         }
 
